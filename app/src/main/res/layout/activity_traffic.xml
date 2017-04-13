@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#9900ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="48sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9900ff"
+            android:singleLine="true"
+            android:text="ICON"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="48sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9900ff"
+            android:singleLine="true"
+            android:text="APP"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="48sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9900ff"
+            android:onClick="showRxChart"
+            android:singleLine="true"
+            android:text="接收"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="48sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9900ff"
+            android:onClick="showTxChart"
+            android:singleLine="true"
+            android:text="发送"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_show_appinfos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</LinearLayout>
