@@ -87,4 +87,15 @@ public class TrafficActivity extends Activity {
         Intent pieIntent = new PieChart(appInfos," 发送 ",this).getIntent(this);
         startActivity(pieIntent);
     }
+
+    public void showTotChart(View view){
+        Collections.sort(appInfos,new Comparator<ApplicationInfo>() {
+            @Override
+            public int compare(ApplicationInfo appInfo0, ApplicationInfo appInfo1) {
+                return (int) ((TrafficStats.getUidTxBytes(appInfo1.uid)+TrafficStats.getUidRxBytes(appInfo1.uid)) - (TrafficStats.getUidTxBytes(appInfo0.uid)+TrafficStats.getUidRxBytes(appInfo0.uid)));
+            }
+        });
+        Intent pieIntent = new PieChart(appInfos," 合计 ",this).getIntent(this);
+        startActivity(pieIntent);
+    }
 }

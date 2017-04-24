@@ -74,6 +74,7 @@ public class AppInfoAdapter extends BaseAdapter {
             viewHolder.tv_app_name = (TextView) view.findViewById(R.id.tv_app_name);
             viewHolder.tv_app_mobile = (TextView) view.findViewById(R.id.tv_app_mobile);
             viewHolder.tv_app_wifi = (TextView) view.findViewById(R.id.tv_app_wifi);
+            viewHolder.tv_app_tot=(TextView)view.findViewById(R.id.tv_app_tot);
 
             view.setTag(viewHolder);
         } else {
@@ -91,6 +92,8 @@ public class AppInfoAdapter extends BaseAdapter {
 
         viewHolder.tv_app_wifi.setText(Formatter.formatFileSize(context, TrafficStats.getUidTxBytes(appInfo.uid)));
 
+        viewHolder.tv_app_tot.setText(Formatter.formatFileSize(context,TrafficStats.getUidRxBytes(appInfo.uid)+TrafficStats.getUidTxBytes(appInfo.uid)));
+
         return view;
     }
 
@@ -100,6 +103,7 @@ public class AppInfoAdapter extends BaseAdapter {
         TextView tv_app_name;
         TextView tv_app_mobile;
         TextView tv_app_wifi;
+        TextView tv_app_tot;
     }
 
 }

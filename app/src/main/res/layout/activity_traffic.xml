@@ -127,6 +127,16 @@
             android:singleLine="true"
             android:text="发送"
             android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="48sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9900ff"
+            android:onClick="showTotChart"
+            android:singleLine="true"
+            android:text="合计"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
     <ListView
