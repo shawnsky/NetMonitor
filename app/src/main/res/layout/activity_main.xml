@@ -19,6 +19,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="33dp"
             android:text="已用流量"
+            android:textColor="#000"
             android:textSize="20sp" />
 
         <TextView
@@ -29,6 +30,7 @@
             android:layout_marginLeft="150dp"
             android:layout_marginTop="33dp"
             android:layout_weight="1"
+            android:textColor="#000"
             android:text="0M"
             android:textSize="35sp" />
 
@@ -47,6 +49,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="33dp"
+            android:textColor="#000"
             android:text="网络状态"
             android:textSize="20sp" />
 
@@ -57,6 +60,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="33dp"
+            android:textColor="#000"
             android:layout_weight="1"
             android:text=""
             android:textSize="35sp" />
@@ -77,6 +81,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="33dp"
             android:text="当前电量"
+            android:textColor="#000"
             android:textSize="20sp" />
 
         <TextView
@@ -86,6 +91,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="33dp"
+            android:textColor="#000"
             android:layout_weight="1"
             android:text="100%"
             android:textSize="35sp" />
@@ -99,6 +105,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:background="#FFFAFA"
+        android:textColor="#000"
         android:text="流量统计" />
 
 </LinearLayout>

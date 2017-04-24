@@ -1,4 +1,4 @@
-package com.example.trafficmanager.view;
+package com.xtlog.shawn.netmonitor.view;
 
 import android.content.Context;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.example.trafficmanager.adapter;
+package com.xtlog.shawn.netmonitor.adapter;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -13,8 +13,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.trafficmanager.R;
-import com.example.trafficmanager.utils.ImageUtils;
+import com.xtlog.shawn.netmonitor.R;
+import com.xtlog.shawn.netmonitor.utils.ImageUtils;
 
 import java.util.List;
 
@@ -87,7 +87,6 @@ public class AppInfoAdapter extends BaseAdapter {
         viewHolder.iv_app_icon.setImageBitmap(ImageUtils.getResizedBitmap(appIcon));
 
         viewHolder.tv_app_name.setText(appInfo.loadLabel(packageManager).toString());
-
         viewHolder.tv_app_mobile.setText(Formatter.formatFileSize(context, TrafficStats.getUidRxBytes(appInfo.uid)));
 
         viewHolder.tv_app_wifi.setText(Formatter.formatFileSize(context, TrafficStats.getUidTxBytes(appInfo.uid)));

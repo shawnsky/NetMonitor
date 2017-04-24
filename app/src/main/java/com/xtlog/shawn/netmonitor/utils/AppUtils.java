@@ -1,4 +1,4 @@
-package com.example.trafficmanager.utils;
+package com.xtlog.shawn.netmonitor.utils;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
